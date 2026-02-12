@@ -25,7 +25,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "tim2_pwm.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -94,7 +94,8 @@ int main(void)
   MX_TIM1_Init();
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
-
+  PWM_TIM2_Init();
+  PWM_TIM2_Start();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -102,7 +103,8 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
+    PWM_TIM2_Setfreq(50);
+    PWM_TIM2_Setduty(40);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
