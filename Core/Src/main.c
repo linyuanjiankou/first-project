@@ -26,6 +26,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "tim2_pwm.h"
+#include "adc_pot.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -96,6 +97,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
   PWM_TIM2_Init();
   PWM_TIM2_Start();
+  ADC_Pot_Init();
   /* USER CODE END 2 */
 
   /* Infinite loop */

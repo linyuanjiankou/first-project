@@ -1,0 +1,19 @@
+#ifndef __ADC_POT_H__
+#define __ADC_POT_H__
+
+#include "stm32f1xx.h"
+
+#ifdef __cplusplus
+extern "C"{
+#endif
+
+void ADC_Pot_Init(void);
+uint16_t ADC_Pot_Read(void);
+uint16_t ADC_Pot_ReadFiltered(void);
+uint32_t ADC_Pot_GetVoltage_mV(void);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif
