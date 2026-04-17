@@ -121,7 +121,7 @@ FlowingLight8/
 在开始之前，请确保你的电脑已安装以下软件：
 
 - **Keil MDK-ARM (v5)**：必须安装，用于提供编译器和调试驱动。
-- **Visual Studio Code**：用于编写代码。
+- **VSCode**: 可选，如果你想使用vscode进行编写代码的话。
 - **STM32F1 Device Support Pack**：在 Keil 的 Pack Installer 中安装。
 
 #### 2. 编译与烧录(二选一)
@@ -129,7 +129,7 @@ FlowingLight8/
 1. 克隆仓库：`git clone https://github.com/linyuanjiankou/STM32-Interactive-LED`
 2. 打开工程，检查 `main.c` 中的系统时钟是否配置为 **72MHz**。
 
-**🅰️ 方案 A：使用 VSCode 进行开发与编译 (推荐)**
+**🅰️ 方案 A：使用 VSCode 进行开发与编译**
 
 1. 使用 VSCode 打开项目根目录。
 2. 确保已安装 **EIDE** 插件。
